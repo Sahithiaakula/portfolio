@@ -15,7 +15,7 @@ body{
     line-height:1.6;
 }
 
-/* Header */
+/* ===== Header ===== */
 
 header{
     background:linear-gradient(135deg,#0f172a,#2563eb);
@@ -50,7 +50,7 @@ nav a:hover{
     color:#facc15;
 }
 
-/* Sections */
+/* ===== Sections ===== */
 
 section{
     width:90%;
@@ -60,6 +60,12 @@ section{
     padding:35px;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:0.3s ease;
+}
+
+section:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
 section h2{
@@ -74,7 +80,16 @@ section p{
     margin-top:10px;
 }
 
-/* Skills */
+/* ===== Headings ===== */
+
+h3{
+    color:#0f172a;
+    margin-top:25px;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+/* ===== Skills ===== */
 
 ul{
     display:grid;
@@ -98,25 +113,47 @@ ul li:hover{
     transform:translateY(-5px);
 }
 
-/* Projects */
-
-h3{
-    color:#0f172a;
-    margin-top:25px;
-}
+/* ===== Projects ===== */
 
 #projects p{
     margin-bottom:20px;
 }
 
-/* Contact */
+#projects img{
+    width:100%;
+    border-radius:12px;
+    margin:20px 0 35px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+#projects img:hover{
+    transform:scale(1.02);
+}
+
+/* ===== Links ===== */
+
+a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* ===== Contact ===== */
 
 #contact p{
     margin:12px 0;
     font-size:17px;
 }
 
-/* Footer */
+#contact a{
+    font-weight:600;
+}
+
+/* ===== Footer ===== */
 
 footer{
     background:#0f172a;
@@ -126,14 +163,7 @@ footer{
     margin-top:50px;
 }
 
-/* Hover Animation */
-
-section:hover{
-    transform:translateY(-5px);
-    transition:.3s;
-}
-
-/* Mobile */
+/* ===== Mobile Responsive ===== */
 
 @media(max-width:768px){
 
@@ -156,6 +186,11 @@ nav a{
 
 section{
     width:95%;
+    padding:25px;
+}
+
+h3{
+    font-size:20px;
 }
 
 }
